@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>change password</title>
+   </head>
+   <style>
+      
+    nav {
+      background-image:url('10.png') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 10px;
+    
+    }
+    nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #f2f2f2;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+   
+   form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="password"] {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+   </style> 
+   <body>
+    <nav>
+       
+        
+        <ul>
+          
+          <li><a href="login.html">الخروج</a></li>
+          <li><a href="#">تغير كلمة المرور</a></li>
+          <li>
+            <a href="#" onclick="toggleSelect()">التقارير &#9662;</a>
+            <select id="stations-select">
+              <option value="#">Station 1</option>
+              <option value="#">Station 2</option>
+              <option value="#">Station 3</option>
+            </select>
+          </li>
+          
+          <li><a href="#">البحث</a></li>
+          <li><a href="#">المراجعة</a></li>
+          <li>
+            <a href="#" onclick="toggleSelect()">المواقع &#9662;</a>
+            <select id="stations-select">
+              <option value="#">Station 1</option>
+              <option value="#">Station 2</option>
+              <option value="#">Station 3</option>
+            </select>
+          </li>
+          <li>
+            <a href="#" onclick="toggleSelect()">المحطات &#9662;</a>
+            <select id="stations-select">
+              <option value="#">Station 1</option>
+              <option value="#">Station 2</option>
+              <option value="#">Station 3</option>
+            </select>
+          </li>
+          <li><a href="#">الرئيسية</a></li>
+        </ul>
+        <div class="logo"><img src="3.png" alt="Logo">
+        </div>
+      </nav>
+    <form>
+        <h2>Change Password</h2>
+        <div>
+          <label for="current-password">Current Password</label>
+          <input type="password" id="current-password" name="current-password" required>
+        </div>
+        <div>
+          <label for="new-password">New Password</label>
+          <input type="password" id="new-password" name="new-password" required>
+        </div>
+        <div>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit">Change Password</button>
+      </form>
+   </body>
+</html>

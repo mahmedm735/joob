@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    nav {
+      background-image:url('10.png') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 10px;
+    
+    }
+    nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.2s ease-in-out;
+    }
+    nav a:hover {
+      color: #0edd57;
+      background-color: #ad0b0b;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav li select {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+nav img {
+  height: 100px;
+  width: auto;
+}
+
+nav .logo {
+  nav .logo {
+  margin-left: 0;
+}
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="3.png" alt="Logo">
+    </div>
+    
+    <ul>
+      
+      <li><a href="login.html">الخروج</a></li>
+      <li><a href="#">تغير كلمة المرور</a></li>
+      <li>
+        <a href="#" onclick="toggleSelect()">التقارير &#9662;</a>
+        <select id="stations-select">
+          <option value="#">Station 1</option>
+          <option value="#">Station 2</option>
+          <option value="#">Station 3</option>
+        </select>
+      </li>
+      
+      <li><a href="#">البحث</a></li>
+      <li><a href="#">المراجعة</a></li>
+      <li>
+        <a href="#" onclick="toggleSelect()">المواقع &#9662;</a>
+        <select id="stations-select">
+          <option value="#">Station 1</option>
+          <option value="#">Station 2</option>
+          <option value="#">Station 3</option>
+        </select>
+      </li>
+      <li>
+        <a href="#" onclick="toggleSelect()">المحطات &#9662;</a>
+        <select id="stations-select">
+          <option value="#">Station 1</option>
+          <option value="#">Station 2</option>
+          <option value="#">Station 3</option>
+        </select>
+      </li>
+      <li><a href="#">الرئيسية</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleSelect() {
+      var select = document.getElementById("stations-select");
+      if (select.style.display === "none") {
+        select.style.display = "block";
+      } else {
+        select.style.display = "0";
+      }
+    }
+    </script>
+  
+  
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec dui vel neque blandit aliquet. Fusce vitae lectus non nulla suscipit dictum sit amet vitae lacus. Cras gravida, justo vitae pulvinar consectetur, ipsum augue volutpat dui, vel aliquet augue orci a est. Aenean luctus semper justo, id tincidunt metus fringilla nec. Donec in dictum ipsum. Sed nec elit enim. Proin nec velit ipsum. Duis vel mauris id tellus accumsan venenatis. Mauris eget diam ut nunc bibendum fringilla.</p>
+  </div>
+</body>
+</html>
